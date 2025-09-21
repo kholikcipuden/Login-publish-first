@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Halaman Login</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            background: whitesmoke;
+            font-family: Arial, sans-serif;
+        }
+        .center-container {
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .balloon-container {
+            background: #fff;
+            border-radius: 30px 30px 40px 40px/40px 40px 60px 60px;
+            box-shadow: -2px -9px 34px 19px rgba(212,43,43,0.4);
+            -webkit-box-shadow: -2px -9px 34px 19px rgba(212,43,43,0.4);
+            -moz-box-shadow: -2px -9px 34px 19px rgba(212,43,43,0.4);
+            padding: 40px 32px;
+            width: 100%;
+            max-width: 350px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .balloon-container h2 {
+            margin-bottom: 24px;
+            color: #333;
+        }
+        .form-group {
+            width: 100%;
+            margin-bottom: 16px;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 6px;
+            color: #555;
+            font-size: 15px;
+        }
+        .form-group input {
+            width: 100%;
+            padding: 10px 12px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            font-size: 15px;
+            background: #fafafa;
+            transition: border 0.2s;
+        }
+        .form-group input:focus {
+            border-color: #f32121;
+            outline: none;
+        }
+        .submit-btn {
+            width: 100%;
+            padding: 12px;
+            background: #4f8cff;
+            color: #fff;
+            border: none;
+            border-radius: 6px;
+            font-size: 16px;
+            cursor: pointer;
+            margin-top: 8px;
+            transition: background 0.2s;
+        }
+        .submit-btn:hover {
+            background: #357ae8;
+        }
+        .signin-link {
+            margin-top: 18px;
+            font-size: 14px;
+            color: #666;
+        }
+        .signin-link a {
+            color: #4f8cff;
+            text-decoration: none;
+            margin-left: 4px;
+        }
+        .signin-link a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="center-container">
+        <div class="balloon-container">
+            <h2>Daftar Akun</h2>
+            <form>
+                <div class="form-group">
+                    <label for="name">Nama</label>
+                    <input type="text" id="name" name="name" required autocomplete="off">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required autocomplete="off">
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" required autocomplete="off">
+                </div>
+                <div class="form-group">
+                    <label for="confirm-password">Konfirmasi Password</label>
+                    <input type="password" id="confirm-password" name="confirm-password" required autocomplete="off">
+                </div>
+                <button type="submit" class="submit-btn">Submit</button>
+            </form>
+            <div class="signin-link">
+                Sudah punya akun?
+                <a href="signin.html">Sign In</a>
+            </div>
+        </div>
+    </div>
+
+<script src="script.js"></script>
+</body>
+</html>
